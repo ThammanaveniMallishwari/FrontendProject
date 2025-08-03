@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Easy Rail Booking
 
 Welcome to **Easy Rail Booking**!  
