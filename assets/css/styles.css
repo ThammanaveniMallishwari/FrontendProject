@@ -1,0 +1,332 @@
+/* Scroll Behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar Smooth Hover */
+.navbar-nav .nav-link {
+    color: #f8f9fa !important;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0d6efd !important;
+}
+/* Navbar Brand Styles */
+.navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff !important;
+}
+
+.navbar-brand .logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.navbar-brand .brand-name {
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Hover Effect */
+.navbar-brand:hover .brand-name {
+    color: #0d6efd;
+}
+
+.navbar-brand:hover .logo {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+
+/* Hero Section Styles */
+.hero-section {
+    position: relative;
+    height: 60vh;
+    background-image: url('../images/top.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    animation: fadeInUp 1.2s ease-out;
+    letter-spacing: 2px;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #dddddd;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.hero-section .btn-primary {
+    font-size: 1.2rem;
+    padding: 15px 40px;
+    border-radius: 30px;
+    background-color: #0d6efd;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 123, 255, 0.3);
+}
+
+.hero-section .btn-primary:hover {
+    background-color: #0056b3;
+    box-shadow: 0 16px 32px rgba(0, 123, 255, 0.4);
+    transform: translateY(-4px);
+}
+
+/* Fade In Animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-overlay .btn-primary:hover {
+    background-color: #0056b3;
+    box-shadow: 0 16px 32px rgba(0, 123, 255, 0.4);
+    transform: translateY(-4px);
+}
+
+/* Feature Card Effects */
+.card {
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+/* Destination Search Section */
+.destination-search {
+    background-color: #f8f9fa;
+    margin-top: -60px;
+    border-radius: 20px;
+    padding: 60px 0;
+    z-index: 1;
+    position: relative;
+}
+
+.destination-search h2 {
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.search-box {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.search-box .form-label {
+    font-weight: 600;
+    color: #333;
+}
+
+.search-box .form-control {
+    border-radius: 10px;
+    padding: 10px 15px;
+    border: 1px solid #ced4da;
+    font-size: 15px;
+}
+
+.search-box .btn-primary {
+    background-color: #007bff;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+}
+/* Professional Hover Effect for Search Button */
+.search-box .btn-primary {
+    background-color: #007bff;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.4s ease;
+    padding: 10px 30px;
+    border: none;
+    color: #ffffff;
+    box-shadow: 0px 4px 20px rgba(0, 123, 255, 0.2);
+}
+
+.search-box .btn-primary:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0px 8px 25px rgba(0, 123, 255, 0.4);
+}
+
+/* Adding a subtle glow */
+.search-box .btn-primary::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 15px;
+    background: rgba(0, 123, 255, 0.2);
+    z-index: -1;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+.search-box .btn-primary:hover::after {
+    opacity: 1;
+    filter: blur(10px);
+}
+/* Login and Signup Styles */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.login-card {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 0.8s;
+    
+    transform: translateY(20px);
+}
+
+.login-card h2 {
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.login-card .logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.login-card .btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.login-card .btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.login-card p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.login-card.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.error-message {
+    color: #d9534f;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Card Image Styles */
+.card-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    filter: brightness(0.6); /* Darken image for better text visibility */
+    transition: filter 0.3s, transform 0.3s;
+}
+
+.mission-card:hover .card-img,
+.vision-card:hover .card-img,
+.why-choose-card:hover .card-img {
+    filter: brightness(0.4);
+    transform: scale(1.05);
+}
+
+/* Overlay Content Styles */
+.card-overlay-content {
+    position: absolute;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    width: 97%;
+    transition: background 0.3s;
+}
+
+.mission-card:hover .card-overlay-content,
+.vision-card:hover .card-overlay-content,
+.why-choose-card:hover .card-overlay-content {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+
+/* Footer Styles */
+footer {
+    background-color: #212529;
+    color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    flex-shrink: 0;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
+}
